@@ -1,6 +1,11 @@
 import { useState } from "react";
 import "./Projects.css";
 import fairFare from "./FairFare.png";
+import theRegistry from "./theRegistry.png";
+import movieFinder from "./movieFinder.png";
+import codingQuiz from "./codingQuiz.png";
+import passwordGenerator from "./passwordGenerator.png";
+import workDay from "./workDay.png";
 
 export default function Projects() {
   let [index, setIndex] = useState(0);
@@ -15,36 +20,36 @@ export default function Projects() {
         "Home page image of the Fair Fare app, with an image of people enjoying a meal.",
     },
     {
-      name: "",
-      image: "",
-      liveSite: "",
-      repository: "",
-      altText: "",
+      name: "The Registry",
+      image: theRegistry,
+      liveSite: "https://github.com/kaelinpsalazar/Project-3",
+      repository: "https://github.com/kaelinpsalazar/Project-3",
+      altText: "Home page for the Registry App.",
     },
 
     {
-      name: "",
-      image: "",
-      repository: "",
-      altText: "",
+      name: "Random Movie Finder",
+      image: movieFinder,
+      repository: "https://github.com/kamarygillespie4/team-project-1",
+      altText: "An image from the homepage of the Movie Finder app.",
     },
     {
-      name: "",
-      image: "",
-      repository: "",
-      altText: "",
+      name: "Coding Quiz",
+      image: codingQuiz,
+      repository: "https://github.com/TommyBspeed/codingQuiz",
+      altText: "The starting screen for my coding quiz app",
     },
     {
-      name: "",
-      image: "",
-      repository: "",
-      altText: "",
+      name: "Random Password Generator",
+      image: passwordGenerator,
+      repository: "https://github.com/TommyBspeed/PasswordRandomizer",
+      altText: "The starting screen for my password randomizer app",
     },
     {
-      name: "",
-      image: "",
-      repository: "",
-      altText: "",
+      name: "Work Day Scheduler",
+      image: workDay,
+      repository: "https://github.com/TommyBspeed/workDayScheduler",
+      altText: "The home page of my workday scheduler app",
     },
   ];
 
@@ -113,18 +118,14 @@ export default function Projects() {
               href={projects[index].repository}
               target="_blank"
               rel="noreferrer"
-            >
-              Code
-            </a>
+            ></a>
             {projects[index].liveSite ? (
               <a
                 className="projectLink"
                 href={projects[index].liveSite}
                 target="_blank"
                 rel="noreferrer"
-              >
-                Application
-              </a>
+              ></a>
             ) : (
               <></>
             )}
