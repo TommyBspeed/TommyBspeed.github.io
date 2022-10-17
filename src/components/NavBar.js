@@ -15,11 +15,17 @@ const showLinks = (e) => {
 export default function NavBar() {
   return (
     <div className="containerNav">
-      <h1>Tommy Boileau</h1>
+      <Link className="btnNav" id="nameTag" to={"/"}>
+        Tommy Boileau
+      </Link>
       <div className="iconNav" onClick={showLinks}>
         <FaHamburger />
       </div>
-      <div className="linksNav" id="linksNav">
+      <div
+        className="linksNav"
+        id="linksNav"
+        style={{ display: "none", justifyContent: "center" }}
+      >
         <Link className="btnNav" to={"/"}>
           About Me
         </Link>
