@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/static/css/main.8412f755.css",
+    "main.js": "/static/js/main.14a0cc08.js",
+    "static/js/787.a2cb61a6.chunk.js": "/static/js/787.a2cb61a6.chunk.js",
+    "static/media/FairFare.png": "/static/media/FairFare.93681f6aba3e021838c5.png",
+    "static/media/movieFinder.png": "/static/media/movieFinder.6b781209e1d8a0d99d1b.png",
+    "static/media/theRegistry.png": "/static/media/theRegistry.1800675b4f6e262cd0f4.png",
+    "static/media/workDay.png": "/static/media/workDay.a55c4e264a7ba7efd0d7.png",
+    "static/media/codingQuiz.png": "/static/media/codingQuiz.ae4020fcb5f751737d33.png",
+    "static/media/headshot.jpeg": "/static/media/headshot.f4da6ae37ded6552c31a.jpeg",
+    "static/media/tommyboileauresume.pdf": "/static/media/tommyboileauresume.c07b6ec5b33fcef2a491.pdf",
+    "static/media/passwordGenerator.png": "/static/media/passwordGenerator.aa25cbf89939def02f6b.png",
+    "index.html": "/index.html",
+    "main.8412f755.css.map": "/static/css/main.8412f755.css.map",
+    "main.14a0cc08.js.map": "/static/js/main.14a0cc08.js.map",
+    "787.a2cb61a6.chunk.js.map": "/static/js/787.a2cb61a6.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8412f755.css",
+    "static/js/main.14a0cc08.js"
+  ]
+}
