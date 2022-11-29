@@ -33,7 +33,7 @@ export default function AboutMe() {
       ></img>
       <p>
         Hi everyone! And welcome to my portfolio page! My name is Tommy Boileau,
-        I am a former professional racecar driver turned Full-Stack we
+        I am a former professional racecar driver turned Full-Stack web
         developer. Outside of racing and coding, I am a big hockey fan (GO AVS!)
         and play mens league hockey twice a week, I am a golf fanatic, I love
         video games, and I have a wonderful dog named Ricky Bobby with my
