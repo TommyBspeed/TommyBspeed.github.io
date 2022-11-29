@@ -7,7 +7,7 @@ function Resume() {
     <div className="resumeDownload">
       <div className="resumeCard">
         <h3 className="resumeTitle">Resume</h3>
-        <img src={resumeClip} alt="Tommy's resume" className="resumeImg"></img>
+        <img src={resume} alt="Tommy's resume" className="resumeImg"></img>
         <a
           title="Download Resume"
           href={resume}
