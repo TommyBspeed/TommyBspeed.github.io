@@ -6,8 +6,6 @@ import AboutMe from "./Pages/AboutME/AboutMe";
 import Projects from "./Pages/Projects/Projects";
 import Contact from "./Pages/Contact/Contact";
 import Resume from "./Pages/Resume/Resume";
-import "./Components/DarkMode/DarkMode.css";
-import React, { useState, useEffect } from "react";
 
 function App() {
   console.log("#   #  #####  #      #      #####");
@@ -16,17 +14,6 @@ function App() {
   console.log("#   #  #      #      #      #   #");
   console.log("#   #  #####  #####  #####  #####");
   console.log("This site has been built by Tommy Boileau");
-  const [theme, setTheme] = useState("light");
-  const toggleTheme = () => {
-    if (theme === "light") {
-      setTheme("dark");
-    } else {
-      setTheme("light");
-    }
-  };
-  useEffect(() => {
-    document.body.className = theme;
-  }, [theme]);
 
   return (
     <Router>
@@ -40,7 +27,6 @@ function App() {
         </Routes>
         <Footer />
       </div>
-      <button onClick={setTheme}></button>
     </Router>
   );
 }

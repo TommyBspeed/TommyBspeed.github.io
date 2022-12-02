@@ -55,7 +55,7 @@ export default function NavBar() {
           Resume
         </Link>
       </div>
-      <button onClick={toggleTheme}></button>
+      <button onClick={toggleTheme}>Dark Mode</button>
     </div>
   );
 }

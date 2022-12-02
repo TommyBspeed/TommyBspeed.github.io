@@ -89,3 +89,6 @@
 .pushable:focus:not(:focus-visible) {
   outline: none;
 }
+a:visited {
+  color: red;
+}

@@ -23,14 +23,12 @@ const showLinks = (e) => {
 };
 
 export default function AboutMe() {
+  const showLinks = (event) => {
+    event.getElementByclassName.classList.toggle("allIcons2");
+  };
   return (
     <div className="containerAbout">
-      <img
-        className="profile"
-        src={headshot}
-        alt="Picture of Tommy Boileau"
-        onClick={showLinks}
-      ></img>
+      <img className="profile" src={headshot} alt="Tommy Boileau"></img>
       <p>
         Hi everyone! And welcome to my portfolio page! My name is Tommy Boileau,
         I am a former professional racecar driver turned Full-Stack web
@@ -40,7 +38,7 @@ export default function AboutMe() {
         beautiful wife Abbey.Follow me on my journey as I make my way into the
         professional workplace and grow as a developer!
       </p>
-      <button class="pushable">
+      <button class="pushable" onClick={showLinks}>
         <span class="shadow"></span>
         <span class="edge"></span>
         <span class="front">See More</span>
