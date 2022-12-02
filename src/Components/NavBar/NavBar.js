@@ -1,6 +1,8 @@
 import "./NavBar.css";
 import { Link } from "react-router-dom";
 import { FaHamburger } from "react-icons/fa";
+import "../DarkMode/DarkMode.css";
+import React, { useState, useEffect } from "react";
 
 const showLinks = (e) => {
   e.preventDefault();
@@ -13,6 +15,17 @@ const showLinks = (e) => {
 };
 
 export default function NavBar() {
+  const [theme, setTheme] = useState("light");
+  const toggleTheme = () => {
+    if (theme === "light") {
+      setTheme("dark");
+    } else {
+      setTheme("light");
+    }
+  };
+  useEffect(() => {
+    document.body.className = theme;
+  }, [theme]);
   return (
     <div className="containerNav">
       <Link className="btnNav" id="nameTag" to={"/"}>
@@ -42,6 +55,7 @@ export default function NavBar() {
           Resume
         </Link>
       </div>
+      <button onClick={toggleTheme}></button>
     </div>
   );
 }

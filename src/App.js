@@ -1,13 +1,33 @@
 import "./App.css";
-import NavBar from "./components/NavBar";
-import Footer from "./components/Footer";
+import NavBar from "./Components/NavBar/NavBar";
+import Footer from "./Components/Footer/Footer";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import AboutMe from "./components/AboutMe";
-import Projects from "./components/Projects";
-import Contact from "./components/Contact";
-import Resume from "./components/Resume";
+import AboutMe from "./Pages/AboutME/AboutMe";
+import Projects from "./Pages/Projects/Projects";
+import Contact from "./Pages/Contact/Contact";
+import Resume from "./Pages/Resume/Resume";
+import "./Components/DarkMode/DarkMode.css";
+import React, { useState, useEffect } from "react";
 
 function App() {
+  console.log("#   #  #####  #      #      #####");
+  console.log("#   #  #      #      #      #   #");
+  console.log("#####  #####  #      #      #   #");
+  console.log("#   #  #      #      #      #   #");
+  console.log("#   #  #####  #####  #####  #####");
+  console.log("This site has been built by Tommy Boileau");
+  const [theme, setTheme] = useState("light");
+  const toggleTheme = () => {
+    if (theme === "light") {
+      setTheme("dark");
+    } else {
+      setTheme("light");
+    }
+  };
+  useEffect(() => {
+    document.body.className = theme;
+  }, [theme]);
+
   return (
     <Router>
       <div className="App">
@@ -20,6 +40,7 @@ function App() {
         </Routes>
         <Footer />
       </div>
+      <button onClick={setTheme}></button>
     </Router>
   );
 }

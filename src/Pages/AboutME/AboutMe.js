@@ -40,8 +40,14 @@ export default function AboutMe() {
         beautiful wife Abbey.Follow me on my journey as I make my way into the
         professional workplace and grow as a developer!
       </p>
-      <h3>Technologies:</h3>
+      <button class="pushable">
+        <span class="shadow"></span>
+        <span class="edge"></span>
+        <span class="front">See More</span>
+      </button>
+
       <div className="allIcons">
+        <h3>Technologies:</h3>
         <div className="iconBox">
           <DiJavascript1 className="icons" />
           JavaScript
