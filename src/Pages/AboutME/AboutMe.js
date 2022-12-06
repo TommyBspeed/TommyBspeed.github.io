@@ -27,7 +27,8 @@ export default function AboutMe() {
     event.getElementByclassName.classList.toggle("allIcons2");
   };
   return (
-    <div className="containerAbout">
+    <div className="container">
+      <h1>Tommy Boileau</h1>
       <img className="profile" src={headshot} alt="Tommy Boileau"></img>
       <p>
         Hi everyone! And welcome to my portfolio page! My name is Tommy Boileau,
@@ -38,11 +39,6 @@ export default function AboutMe() {
         beautiful wife Abbey.Follow me on my journey as I make my way into the
         professional workplace and grow as a developer!
       </p>
-      <button class="pushable" onClick={showLinks}>
-        <span class="shadow"></span>
-        <span class="edge"></span>
-        <span class="front">See More</span>
-      </button>
 
       <div className="allIcons">
         <h3>Technologies:</h3>
@@ -85,6 +81,13 @@ export default function AboutMe() {
         <div className="iconBox">
           <DiMongodb className="icons" />
           MongoDB
+        </div>
+        <div className="buttonBox">
+          <button class="pushable" onClick={showLinks}>
+            <span class="shadow"></span>
+            <span class="edge"></span>
+            <span class="front">See More</span>
+          </button>
         </div>
       </div>
     </div>

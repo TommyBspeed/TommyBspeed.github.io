@@ -1,7 +1,7 @@
 /* apply a font family and size to the whole page */
 * {
   box-sizing: border-box;
-  font-family: "Edu VIC WA NT Beginner", cursive;
+  font-family: "Zen Dots", cursive;
   font-size: 20px;
 }
 
@@ -204,6 +204,7 @@ p {
   justify-content: center;
   align-items: center;
   color: blue;
+  padding-bottom: 5px;
 }
 
 /* set paramaters for the mylinks links and make sure they do not appear until hovered */
@@ -239,9 +240,22 @@ p {
     background-color: #595453;
   }
 }
-.allIcons {
-  display: none;
-}
+
 .allIcons2 {
   display: flex;
+}
+.profile {
+  padding-top: 5px;
+}
+button {
+  padding-top: 7px;
+}
+
+.iconBox {
+  padding-bottom: 10px;
+}
+
+.buttonBox {
+  padding-top: 5px;
+  padding-bottom: 10px;
 }

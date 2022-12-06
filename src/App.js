@@ -6,6 +6,7 @@ import AboutMe from "./Pages/AboutME/AboutMe";
 import Projects from "./Pages/Projects/Projects";
 import Contact from "./Pages/Contact/Contact";
 import Resume from "./Pages/Resume/Resume";
+import { Background } from "./Components/Background/Background";
 
 function App() {
   console.log("#   #  #####  #      #      #####");
@@ -17,6 +18,7 @@ function App() {
 
   return (
     <Router>
+      <Background />
       <div className="App">
         <NavBar />
         <Routes>
@@ -25,6 +27,7 @@ function App() {
           <Route path="/contact" element={<Contact />} />
           <Route path="/resume" element={<Resume />} />
         </Routes>
+
         <Footer />
       </div>
     </Router>

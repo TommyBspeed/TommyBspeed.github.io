@@ -1,7 +1,7 @@
 /* apply a font family and size to the whole page */
 * {
   box-sizing: border-box;
-  font-family: "Edu VIC WA NT Beginner", cursive;
+  font-family: "Zen Dots", cursive;
   font-size: 40px;
 }
 
