@@ -28,7 +28,7 @@ export default function AboutMe() {
   };
   return (
     <div className="container">
-      <h1>Tommy Boileau</h1>
+      <h1 id="nameHeader">Tommy Boileau</h1>
       <img className="profile" src={headshot} alt="Tommy Boileau"></img>
       <p>
         Hi everyone! And welcome to my portfolio page! My name is Tommy Boileau,
