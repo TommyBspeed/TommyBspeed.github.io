@@ -1,10 +1,3 @@
-/* apply a font family and size to the whole page */
-* {
-  box-sizing: border-box;
-  font-family: "Zen Dots", cursive;
-  font-size: 20px;
-}
-
 body {
   margin: 5px;
   display: flex;
@@ -236,4 +229,9 @@ p {
   footer {
     background-color: #595453;
   }
+}
+.resumeImg {
+  margin-bottom: 10px;
+  width: 600px;
+  height: auto;
 }

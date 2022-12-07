@@ -5,12 +5,11 @@
   font-size: 20px;
 }
 .btnProjects {
-  justify-content: center;
   font-size: 24px;
 }
 
-.btnProjects::hover {
-  cursor: grab;
+.btnProjects:hover {
+  cursor: pointer;
 }
 
 body {
@@ -244,4 +243,29 @@ p {
   footer {
     background-color: #595453;
   }
+}
+
+.imageSection {
+  display: flex;
+
+  justify-content: center;
+}
+.projectImage {
+  width: 600px;
+  height: auto;
+  margin: 10px;
+}
+.projectImage:hover {
+  cursor: pointer;
+}
+
+.lrgScreen {
+  align-self: center;
+}
+
+.smlScreen {
+  align-self: center;
+}
+.projDescription {
+  font-size: smaller;
 }

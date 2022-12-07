@@ -18,6 +18,8 @@ export default function Projects() {
       repository: "https://github.com/timberhead/the-foo-d-s",
       altText:
         "Home page image of the Fair Fare app, with an image of people enjoying a meal.",
+      description:
+        "Fair Fare is an application that allows a user to provide a review of their favorite meals at restaurants that may not have received high ratings for their overall menus. This application will act as a messageboard for promoting great meals at restaurants that users may have overlooked because of the lower overall restaurant rating. ",
     },
     {
       name: "The Registry",
@@ -25,6 +27,8 @@ export default function Projects() {
       liveSite: "https://github.com/kaelinpsalazar/Project-3",
       repository: "https://github.com/kaelinpsalazar/Project-3",
       altText: "Home page for the Registry App.",
+      description:
+        "The Registry is a an app for users to create a registry database for various life events. Whether it be a wedding, new baby, or a graduation. ",
     },
 
     {
@@ -32,24 +36,32 @@ export default function Projects() {
       image: movieFinder,
       repository: "https://github.com/kamarygillespie4/team-project-1",
       altText: "An image from the homepage of the Movie Finder app.",
+      description:
+        "This was our first project as a team in the bootcamp. We decided to utilize a movieDB API to generate random movies based on the selected category.",
     },
     {
       name: "Coding Quiz",
       image: codingQuiz,
       repository: "https://github.com/TommyBspeed/codingQuiz",
       altText: "The starting screen for my coding quiz app",
+      description:
+        "This is a small coding quiz that is used to test your knowledge of basic coding.",
     },
     {
       name: "Random Password Generator",
       image: passwordGenerator,
       repository: "https://github.com/TommyBspeed/PasswordRandomizer",
       altText: "The starting screen for my password randomizer app",
+      description:
+        "This app asks for a few parameters from the user to generate a randomized password.",
     },
     {
       name: "Work Day Scheduler",
       image: workDay,
       repository: "https://github.com/TommyBspeed/workDayScheduler",
       altText: "The home page of my workday scheduler app",
+      description:
+        "This is an app that will allow the user to keep track of their busy work week.",
     },
   ];
 
@@ -82,9 +94,24 @@ export default function Projects() {
 
   return (
     <div className="projectsContainer">
+      <h1>
+        Here are a few of my projects! Take a look at what I have been working
+        on!
+      </h1>
       <div id="cardProject" className="cardProject">
-        <h2>{projects[index].name}</h2>
+        <h2 className="blueText">{projects[index].name}</h2>
+        <h3 className="projDescription">{projects[index].description}</h3>
         <div className="imageSection">
+          <div
+            className="btnProjects smlScreen"
+            onClick={(e) => {
+              e.preventDefault();
+              subtractFromIndex();
+              flipLeft();
+            }}
+          >
+            ◀️
+          </div>
           <img
             className="projectImage"
             src={projects[index].image}
@@ -98,20 +125,10 @@ export default function Projects() {
               flipRight();
             }}
           >
-            Next
+            ▶️
           </div>
         </div>
         <div className="cardFooter">
-          <div
-            className="btnProjects smlScreen"
-            onClick={(e) => {
-              e.preventDefault();
-              subtractFromIndex();
-              flipLeft();
-            }}
-          >
-            Prev
-          </div>
           <div className="linkBox">
             <a
               className="projectLink"

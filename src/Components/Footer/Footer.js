@@ -4,7 +4,7 @@ import { AiFillLinkedin, AiFillGithub } from "react-icons/ai";
 export default function Footer() {
   return (
     <div className="containerFooter">
-      <h3>My links:</h3>
+      <h3 className="blueText">My links:</h3>
       <a
         href="https://github.com/TommyBspeed"
         target="_blank"

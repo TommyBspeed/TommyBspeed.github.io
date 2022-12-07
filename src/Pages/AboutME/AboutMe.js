@@ -11,37 +11,54 @@ import {
 } from "react-icons/di";
 import { SiHandlebarsdotjs, SiExpress } from "react-icons/si";
 import headshot from "./headshot.jpeg";
-
-const showLinks = (e) => {
-  e.preventDefault();
-  const link = document.getElementById("linksNav");
-  if (link.style.display === "flex") {
-    link.style.display = "none";
-  } else {
-    link.style.display = "flex";
-  }
-};
+import Footer from "../../Components/Footer/Footer";
+import React, { useState, useEffect } from "react";
+import Projects from "../Projects/Projects";
+import Contact from "../Contact/Contact";
+import Resume from "../Resume/Resume";
 
 export default function AboutMe() {
-  const showLinks = (event) => {
-    event.getElementByclassName.classList.toggle("allIcons2");
-  };
+  const [show, setShow] = useState(false);
+  const [btnShow, setbtnShow] = useState(true);
+  const [btn2Show, setbtn2Show] = useState(false);
+
   return (
     <div className="container">
-      <h1 id="nameHeader">Tommy Boileau</h1>
+      <h1 className="blueText" id="nameHeader">
+        Tommy Boileau
+      </h1>
+      {/*
+      Future development, slider image of me in/out of helmet. Need to take pics.
+      <div>
+        <div class="img background-img"></div>
+        <div class="img foreground-img"></div>
+        <input
+          type="range"
+          min="1"
+          max="100"
+          value="50"
+          class="slider"
+          name="slider"
+          id="slider"
+        ></input>
+      </div> */}
       <img className="profile" src={headshot} alt="Tommy Boileau"></img>
       <p>
         Hi everyone! And welcome to my portfolio page! My name is Tommy Boileau,
         I am a former professional racecar driver turned Full-Stack web
-        developer. Outside of racing and coding, I am a big hockey fan (GO AVS!)
-        and play mens league hockey twice a week, I am a golf fanatic, I love
-        video games, and I have a wonderful dog named Ricky Bobby with my
-        beautiful wife Abbey.Follow me on my journey as I make my way into the
-        professional workplace and grow as a developer!
+        developer. I have always loved gaming and solving puzzles and found a
+        true love for problem solving by thinking outside of the box. I decided
+        to make a leap into this new career path after the pandemic took away
+        lots of sponsor dollars in motorsport. Outside of racing and coding, I
+        am a big hockey fan (GO AVS!) and play mens league hockey twice a week,
+        I am a golf fanatic, I love video games, and I have a wonderful dog
+        named Ricky Bobby with my beautiful wife Abbey. Follow me on my journey
+        as I make my way into the professional workplace and grow as a
+        developer!
       </p>
 
       <div className="allIcons">
-        <h3>Technologies:</h3>
+        <h3 className="blueText">Technologies:</h3>
         <div className="iconBox">
           <DiJavascript1 className="icons" />
           JavaScript
@@ -83,11 +100,48 @@ export default function AboutMe() {
           MongoDB
         </div>
         <div className="buttonBox">
-          <button class="pushable" onClick={showLinks}>
-            <span class="shadow"></span>
-            <span class="edge"></span>
-            <span class="front">See More</span>
-          </button>
+          {btnShow ? (
+            <button
+              id="pageBtn"
+              class="pushable"
+              onClick={() => [
+                setShow(true),
+                setbtnShow(false),
+                setbtn2Show(true),
+              ]}
+            >
+              <span id="pageBtn" class="shadow"></span>
+              <span id="pageBtn" class="edge"></span>
+              <span id="pageBtn" class="front">
+                See More
+              </span>
+            </button>
+          ) : null}
+          <div>
+            {show ? [<hr></hr>, <Projects />] : null}
+
+            {show ? [<hr></hr>, <Resume />] : null}
+            {show ? [<hr></hr>, <Contact />, <hr></hr>] : null}
+
+            {btn2Show ? (
+              <button
+                id="pageBtn"
+                class="pushable"
+                onClick={() => [
+                  setShow(false),
+                  setbtnShow(true),
+                  setbtn2Show(false),
+                ]}
+              >
+                <span id="pageBtn" class="shadow"></span>
+                <span id="pageBtn" class="edge"></span>
+                <span id="pageBtn" class="front">
+                  See Less
+                </span>
+              </button>
+            ) : null}
+          </div>
+          <Footer />
         </div>
       </div>
     </div>
