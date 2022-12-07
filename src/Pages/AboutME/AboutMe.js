@@ -12,10 +12,11 @@ import {
 import { SiHandlebarsdotjs, SiExpress } from "react-icons/si";
 import headshot from "./headshot.jpeg";
 import Footer from "../../Components/Footer/Footer";
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import Projects from "../Projects/Projects";
 import Contact from "../Contact/Contact";
 import Resume from "../Resume/Resume";
+import { DarkMode } from "../../Components/DarkMode/DarkMode";
 
 export default function AboutMe() {
   const [show, setShow] = useState(false);
@@ -27,6 +28,7 @@ export default function AboutMe() {
       <h1 className="blueText" id="nameHeader">
         Tommy Boileau
       </h1>
+      <DarkMode />
       {/*
       Future development, slider image of me in/out of helmet. Need to take pics.
       <div>

@@ -1,5 +1,4 @@
 import "./App.css";
-import NavBar from "./Components/NavBar/NavBar";
 import Footer from "./Components/Footer/Footer";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import AboutMe from "./Pages/AboutME/AboutMe";
@@ -18,11 +17,13 @@ function App() {
 
   return (
     <Router>
-      <div>
-        <Background />
-      </div>
       <div className="App">
-        <NavBar />
+        <div>
+          <button></button>
+        </div>
+        <div>
+          <Background />
+        </div>
         <Routes>
           <Route path="/" element={<AboutMe />} />
           <Route path="/projects" element={<Projects />} />

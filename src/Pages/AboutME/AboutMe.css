@@ -277,13 +277,13 @@ button {
   height: 100%;
   background-size: 900px 100%;
 }
-.background-img {
+/* .background-img {
   background-image: url("");
 }
 .foreground-img {
   background-image: url("");
-  width: 50%;
-}
+  width: 50%;} */
+
 .icons {
   width: 25px;
   color: aqua;

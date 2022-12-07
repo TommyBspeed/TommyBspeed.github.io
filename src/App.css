@@ -108,3 +108,11 @@ a:visited {
   font-size: larger;
   color: rgb(194, 214, 43);
 }
+.dmcontainer {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+.toggle:hover {
+  cursor: pointer;
+}
