@@ -25,10 +25,11 @@ export default function AboutMe() {
 
   return (
     <div className="container">
+      <DarkMode />
       <h1 className="blueText" id="nameHeader">
         Tommy Boileau
       </h1>
-      <DarkMode />
+
       {/*
       Future development, slider image of me in/out of helmet. Need to take pics.
       <div>

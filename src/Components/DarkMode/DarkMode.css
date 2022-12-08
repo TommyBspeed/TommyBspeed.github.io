@@ -1,22 +1,23 @@
 label {
-  width: 75px;
+  width: 60px;
   height: 30px;
   position: relative;
   display: block;
-  background: #ebebeb;
+  background: #242424;
   border-radius: 200px;
   box-shadow: inset 0px 5px 15px rgba(0, 0, 0, 0.4),
     inset 0px -5px 15px rgba(255, 244, 255, 0.4);
   cursor: pointer;
+  justify-self: flex-end;
 }
 label::after {
   content: "";
   width: 27px;
   height: 27px;
   position: absolute;
-  top: 2px;
+  top: 1.5px;
   left: 2px;
-  background: linear-gradient(180deg, #abb7d7, #2b5cd6);
+  background: linear-gradient(180deg, #777, #3a3a3a);
   border-radius: 180px;
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
 }
@@ -26,12 +27,13 @@ input {
   visibility: hidden;
 }
 input:checked + label {
-  background: #242424;
+  background: #ebebeb;
 }
 input:checked + label:after {
-  left: 73px;
+  left: 58px;
   transform: translateX(-100%);
-  background: linear-gradient(180deg, #777, #3a3a3a);
+
+  background: linear-gradient(180deg, #abb7d7, #2b5cd6);
 }
 label,
 label:after {
