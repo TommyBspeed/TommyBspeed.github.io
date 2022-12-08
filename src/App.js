@@ -8,11 +8,11 @@ import Resume from "./Pages/Resume/Resume";
 import { Background } from "./Components/Background/Background";
 
 function App() {
-  console.log("#   #  #####  #      #      #####");
-  console.log("#   #  #      #      #      #   #");
-  console.log("#####  #####  #      #      #   #");
-  console.log("#   #  #      #      #      #   #");
-  console.log("#   #  #####  #####  #####  #####");
+  console.log("#   #  #####  #      #      #####   ##");
+  console.log("#   #  #      #      #      #   #   ##");
+  console.log("#####  #####  #      #      #   #   ##");
+  console.log("#   #  #      #      #      #   #   ");
+  console.log("#   #  #####  #####  #####  #####   ##");
   console.log("This site has been built by Tommy Boileau");
 
   return (
