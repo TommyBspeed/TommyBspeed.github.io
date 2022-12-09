@@ -28,16 +28,13 @@
   background: #515261;
 }
 
-.toggleActive li {
-  background: rgb(38, 90, 200);
-}
 .background li {
   position: absolute;
   display: block;
   list-style: none;
   width: 20px;
   height: 20px;
-  background: rgba(255, 255, 255, 0.2);
+  background: black;
   animation: animate 31s linear infinite;
 }
 
