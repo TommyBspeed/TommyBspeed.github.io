@@ -24,6 +24,9 @@
   background: #515261;
   overflow: hidden;
 }
+.toggleActive {
+  background: rgb(245, 249, 245);
+}
 .background li {
   position: absolute;
   display: block;

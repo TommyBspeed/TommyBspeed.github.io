@@ -42,6 +42,6 @@ label:after {
 label:active:after {
   width: 34px;
 }
-input:checked + label + .background {
-  background: #242424;
+input:checked + label + .light {
+  background: #cfcbcb;
 }

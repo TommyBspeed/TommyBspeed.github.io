@@ -12,20 +12,20 @@ import {
 import { SiHandlebarsdotjs, SiExpress } from "react-icons/si";
 import headshot from "./headshot.jpeg";
 import Footer from "../../Components/Footer/Footer";
-import React, { useState } from "react";
+import React, { useState, useCallback } from "react";
 import Projects from "../Projects/Projects";
 import Contact from "../Contact/Contact";
 import Resume from "../Resume/Resume";
 import { DarkMode } from "../../Components/DarkMode/DarkMode";
 
-export default function AboutMe() {
+export default function AboutMe({ toggledBackground }) {
   const [show, setShow] = useState(false);
   const [btnShow, setbtnShow] = useState(true);
   const [btn2Show, setbtn2Show] = useState(false);
 
   return (
     <div className="container">
-      <DarkMode />
+      <DarkMode toggledBackground={toggledBackground} />
       <h1 className="blueText" id="nameHeader">
         Tommy Boileau
       </h1>

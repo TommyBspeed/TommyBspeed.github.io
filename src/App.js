@@ -6,6 +6,7 @@ import Projects from "./Pages/Projects/Projects";
 import Contact from "./Pages/Contact/Contact";
 import Resume from "./Pages/Resume/Resume";
 import { Background } from "./Components/Background/Background";
+import React, { useState, useCallback } from "react";
 
 function App() {
   console.log("#   #  #####  #      #      #####   ##");
@@ -15,6 +16,11 @@ function App() {
   console.log("#   #  #####  #####  #####  #####   ##");
   console.log("This site has been built by Tommy Boileau");
 
+  const [toggleActive, settoggleActive] = useState(true);
+  const toggledBackground = useCallback(() => {
+    settoggleActive(!toggleActive);
+  });
+
   return (
     <Router>
       <div className="App">
@@ -22,10 +28,13 @@ function App() {
           <button></button>
         </div>
         <div>
-          <Background />
+          <Background toggleActive={toggleActive} />
         </div>
         <Routes>
-          <Route path="/" element={<AboutMe />} />
+          <Route
+            path="/"
+            element={<AboutMe toggledBackground={toggledBackground} />}
+          />
           <Route path="/projects" element={<Projects />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/resume" element={<Resume />} />
