@@ -34,7 +34,7 @@
   list-style: none;
   width: 20px;
   height: 20px;
-  background: black;
+  background: rgb(40, 39, 39);
   animation: animate 31s linear infinite;
 }
 

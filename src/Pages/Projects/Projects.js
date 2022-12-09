@@ -94,13 +94,13 @@ export default function Projects() {
 
   return (
     <div className="projectsContainer">
-      <h1>
+      <h1 className="font2">
         Here are a few of my projects! Take a look at what I have been working
         on!
       </h1>
       <div id="cardProject" className="cardProject">
         <h2 className="blueText">{projects[index].name}</h2>
-        <h3 className="projDescription">{projects[index].description}</h3>
+        <h2 className="projDescription font2">{projects[index].description}</h2>
         <div className="imageSection">
           <div
             className="btnProjects smlScreen"

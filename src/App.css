@@ -116,3 +116,7 @@ a:visited {
 .toggle:hover {
   cursor: pointer;
 }
+
+.font2 {
+  font-family: sans-serif;
+}

@@ -46,7 +46,7 @@ export default function AboutMe({ toggledBackground }) {
         ></input>
       </div> */}
       <img className="profile" src={headshot} alt="Tommy Boileau"></img>
-      <p>
+      <h2 className="font2">
         Hi everyone! And welcome to my portfolio page! My name is Tommy Boileau,
         I am a former professional racecar driver turned Full-Stack web
         developer. I have always loved gaming and solving puzzles and found a
@@ -58,7 +58,7 @@ export default function AboutMe({ toggledBackground }) {
         named Ricky Bobby with my beautiful wife Abbey. Follow me on my journey
         as I make my way into the professional workplace and grow as a
         developer!
-      </p>
+      </h2>
 
       <div className="allIcons">
         <h3 className="blueText">Technologies:</h3>
