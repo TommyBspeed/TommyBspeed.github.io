@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "./Projects.css";
+import Dunno from "./DunnoScreenshot.png";
 import fairFare from "./FairFare.png";
 import theRegistry from "./theRegistry.png";
 import movieFinder from "./movieFinder.png";
@@ -11,6 +12,16 @@ export default function Projects() {
   let [index, setIndex] = useState(0);
 
   const projects = [
+    {
+      name: "(Work in Progress): Dunno",
+      image: Dunno,
+      liveSite: "TBD",
+      repository: "Currently Private",
+      altText:
+        "Screen shot of my app 'Dunno' Which is currently a work in progress.",
+      description:
+        "Dunno is an app for the indecisive eater. It will help you answer the age old question 'What do you want to eat?' with something other than 'I dunno...' Select your parameters, click submit and let the app do the rest. Still a work in progress, but will be live soon!",
+    },
     {
       name: "Fair Fare",
       image: fairFare,
