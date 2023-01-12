@@ -233,3 +233,9 @@ p {
     background-color: #595453;
   }
 }
+.phoneNum::before {
+  content: "Phone: (719)XXX-XXXX";
+}
+.phoneNum:hover:before {
+  content: "Phone: (719)313-6029";
+}

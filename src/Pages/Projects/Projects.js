@@ -112,6 +112,9 @@ export default function Projects() {
       <div id="cardProject" className="cardProject">
         <h2 className="blueText">{projects[index].name}</h2>
         <h2 className="projDescription font2">{projects[index].description}</h2>
+        <h2 className="githubRepo blueText" href={projects[index].repository}>
+          Link to repo: {projects[index].repository}
+        </h2>
         <div className="imageSection">
           <div
             className="btnProjects smlScreen"
